@@ -1,4 +1,10 @@
-  read_csv("https://raw.githubusercontent.com/datalake101/airQ/main/data.csv") %>%   
+library(readr)
+library(dplyr)
+library(ggplot)
+
+
+
+read_csv("https://raw.githubusercontent.com/datalake101/airQ/main/data.csv") %>%   
     rename(continent='ParentLocation',
            country='Location',
            year='Year',
